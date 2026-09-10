@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #111;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #ff0055;
+            padding-bottom: 10px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #00e5ff;
+            text-transform: uppercase;
+            text-shadow: 2px 2px #ff0055;
+        }
+
+        /* Container Menu Scroll Portrait */
+        .menu-container {
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .product-card {
+            background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
+            border: 2px solid #ff0055;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(255, 0, 85, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .product-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .product-title {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .product-price {
+            font-size: 1.25rem;
+            color: #00e5ff;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-desc {
+            font-size: 0.95rem;
+            color: #ccc;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .btn-buy {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-buy:hover {
+            background-color: #1eb854;
+            box-shadow: 0 0 10px #25d366;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #888;
+            border-top: 1px solid #333;
+            padding-top: 15px;
+            width: 100%;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Kedai Unik</h1>
+    </header>
+
+    <main class="menu-container">
+        <!-- Produk 1 -->
+        <article class="product-card">
+            <img src="https://pin.it/2TWanybYv" alt="Kopi Robusta" class="product-img">
+            <h2 class="product-title">Kopi Robusta</h2>
+            <div class="product-price">Rp 57.000</div>
+            <p class="product-desc">"kopi robusta dengan rasa yang pahit tapi manis dihati"</p>
+            <a href="https://wa.me/628999263117?text=Halo,%20saya%20ingin%20membeli%20Kopi%20Robusta" class="btn-buy" target="_blank">Pesan via WhatsApp</a>
+        </article>
+
+        <!-- Produk 2 -->
+        <article class="product-card">
+            <img src="https://pin.it/4GV44YmcD" alt="Kelomang" class="product-img">
+            <h2 class="product-title">Kelomang</h2>
+            <div class="product-price">Rp 43.000</div>
+            <p class="product-desc">"kelomang, hewan imut kiyut yang lusyu lusyu"</p>
+            <a href="https://wa.me/628999263117?text=Halo,%20saya%20ingin%20membeli%20Kelomang" class="btn-buy" target="_blank">Pesan via WhatsApp</a>
+        </article>
+      <!-- Produk 3 -->
+      <article class="product-card">
+            <img src="https://pin.it/6KfrV3BnZ" alt="Kelomang" class="product-img">
+            <h2 class="product-title">b0t* 🏳️‍🌈</h2>
+            <div class="product-price">Rp 0</div>
+            <p class="product-desc">"lawan boti, buang boti, hina boti, BUNUH BOTI!"</p>
+            <a href="https://wa.me/628999263117?text=Halo,%20saya%20ingin%20membeli%20Kelomang" class="btn-buy" target="_blank">Pesan via WhatsApp</a>
+    </main>
+
+    <footer>
+        <p>&copy; Rashafah Jazuura Abieza</p>
+    </footer>
+
+</body>
+</html>
